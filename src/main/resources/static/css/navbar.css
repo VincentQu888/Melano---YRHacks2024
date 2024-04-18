@@ -1,0 +1,13 @@
+nav{
+    z-index: 9999;
+    width: 100vw;
+    position: absolute;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    opacity: 60%;
+}

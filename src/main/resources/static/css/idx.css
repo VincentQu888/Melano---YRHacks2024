@@ -1,0 +1,33 @@
+#banner{
+    background-color: #18191a;
+}
+
+.title{
+    font-size: 6rem;
+    color: white;
+    font-weight: 700;
+    margin: 0 15vw;
+    padding-left: 27.5vw;
+    width: 100%;
+}
+
+#left{
+    background-color: #0d93f2;
+    z-index: 2;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#right{
+    background-color: #18191a;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
