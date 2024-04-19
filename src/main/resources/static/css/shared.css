@@ -2,6 +2,7 @@ html{
     scroll-behavior: smooth;
     font-family: 'Satoshi', sans-serif;
     overflow-x: hidden;
+    color: #18191a;
 }
   
 .h-screen{
@@ -11,3 +12,16 @@ html{
 .w-screen{
     width: 100vw;
 }
+
+.text-blue{
+    color: #0d93f2;
+}
+
+.text-dark-gray{
+    color: #18191a;
+}
+
+.text-white{
+    color: white;
+}
+

@@ -12,4 +12,13 @@ public class AnchorController {
         return "index";
     }
 
+    @GetMapping("upload")
+    String upload(Model model){
+        return "upload";
+    }
+
+    @GetMapping("result")
+    String result(Model model){
+        return "result";
+    }
 }

@@ -11,36 +11,67 @@
     <script src="/js/index.js" defer=""></script>
 
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&amp;display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/imgs/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
 
-    <title>CalenDR</title>
+    <title>Melano</title>
 </head>
 
 
 <body>
-    <nav class="flex text-xl py-4 px-8">
-        <a class="text-3xl font-extrabold nav-link" href="/">Melano</a>
-        <a class="ml-auto nav-link" href="/">Detection</a>
-        <a class="ml-4 nav-link" href="/">About</a>
+    <nav class="flex text-xl py-4">
+        <a class="text-3xl font-extrabold text-white" href="/">Melano</a>
+        <a class="ml-auto nav-link" href="/">Home</a>
+        <a class="ml-8 nav-link" href="#info-section-right">About</a>
+        <a class="ml-8 nav-link" href="/upload">Detection</a>
     </nav>
 
     <section id="banner" class="h-screen w-screen">
         <div id="left">
             <div class="title">
-                <p>Fighting a battle</p>
-                <p>against <em>skin cancer</em>.</p>
+                <p>Fighting a battle</p>        
+                <p>against <em class="text-dark-gray">skin cancer</em>.</p>
             </div>
         </div>
         <div id="right">
             <div class="title">
                 <p>Fighting a battle</p>
-                <p>for <em>happiness</em>.</p>
+                <p>for <em class="text-blue">happiness</em>.</p>
             </div>
+        </div>
+        
+        <div class="banner-card">
+            <img class="banner-img mb-2" src="/imgs/nevus.png"/>
+            <p class="font-bold text-xl mb-2">Nevus</p>
+            <p class="text-normal">Nevus is a <span class="text-blue">non-cancer</span> growth on the skin formed by a cluster of cells called <span class="text-blue">melanocytes</span>. Usually dark and raised from the skin, it is also known as a mole.</p>
+        </div>
+        <div id="card-2" class="banner-card">
+            <img class="banner-img mb-2" src="/imgs/melanoma.png"/>
+            <p class="font-bold text-xl mb-2">Melanoma</p>
+            <p class="text-normal">Melanoma is a type of skin cancer which starts in the <span class="text-blue">melanocytes</span>. Specifically, melanoma typically starts on skin that's often exposed to the <span class="text-blue">sun</span>. This includes the skin on the arms, back, face and legs.</p>
+        </div>
+        <div id="card-3" class="banner-card">
+            <img class="banner-img mb-2" src="/imgs/skin.jpg"/>
+            <p class="font-bold text-xl mb-2">Normal Skin</p>
+            <p class="text-normal">This is an example of normal human skin without any <span class="text-blue">lesions</span> or <span class="text-blue">conditions</span>.</p>
         </div>
     </section>
 
-    <section id="info-section" class="h-screen">
+    <section id="info-section" class="flex">
+        <div id="info-section-left">
+            <p class="text-3xl font-bold mb-4">Diagnosis is the first step to treatment.</p>
+            <p>Melano takes an image of a skin lesion and uses an AI model trained on <span class="text-blue">thousands</span> of images to determine whether or not the person is at risk of melanoma. Melanoma is the <span class="text-blue">3rd</span> most common type of skin cancer and <span class="text-blue">17th</span> most common cancer worldwide. Ensuring <span class="text-blue">early awareness</span> of the condition is vital, as melanoma is the <span class="text-blue">most invasive</span> type of skin cancer, and can become fatal in as low as 6 weeks. However, if treated early, melanoma has a very high survival rate.</p>
+        </div>
+        <div id="info-section-right">
+            <p class="text-3xl font-bold mb-4">About Melano.</p>
+            <p>Melano is a project made for <a class="underline" href="https://yrhacks.ca">YRHacks2024</a>, with an end goal of <span class="text-blue">aiding</span> in the fight against cancer. Not only as a preliminary tool to assist medical professionals in diagnosing patients, but also as a <span class="text-blue">convenience</span> to the potentially affected. Melano's goal is to make it easier and more reasonable for people to become aware of a potentially life-changing condition.  </p>
+        </div>
+    </section>
 
+    <section id="footer" class="flex">
+        <a class="text-3xl font-bold">Melano</a>
+        <a class="ml-auto hover:underline" href="/">Home</a>
+        <a class="ml-8 hover:underline" href="#info-section-right">About</a>
+        <a class="ml-8 hover:underline" href="/upload">Detection</a>
     </section>
 </body>
 </html>

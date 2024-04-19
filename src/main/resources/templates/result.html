@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link th:href="@{css/main.css}" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/upload.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/shared.css">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+
+    <title>Result</title>
+</head>
+
+
+<body>
+    <section id="upload-section" class="h-screen w-screen flex">
+        <div id="dashboard-nav">
+            <a class="text-3xl font-bold block mb-2" href="/">Melano</a>
+            <a class="text-xl block hover:underline" href="/">Home</a>
+            <a class="text-xl block hover:underline" href="/upload">Upload Image</a>
+            <a id="back-home-nav" class="hover:underline block" href="/">&larr; Back Home</a>
+        </div>
+
+       <div id="prediction-container">
+            <p id="prediction-text" class="text-3xl font-bold mb-2" th:text="${prediction}"></p>
+            <p>Statistics: </p>
+            <p th:text="'Model calculated probability: ' + ${prob}"></p>
+            <p th:text="'Runtime: ' + ${runtime} + 'ms'" class="mb-2"></p>
+            <a href="/upload" class="text-blue text-xl font-bold hover:underline">Upload another image &rarr;</a>
+       </div>
+    </section>
+</body>
+</html>

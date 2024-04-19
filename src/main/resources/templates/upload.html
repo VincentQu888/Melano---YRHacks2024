@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link th:href="@{css/main.css}" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/upload.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/shared.css">
+    <script src="/js/upload.js" defer=""></script>
+
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png">
+
+    <title>Upload Image</title>
+</head>
+
+
+<body>
+    <div id="loading-popup" class="flex justify-center items-center">
+        <p class="text-3xl">Loading Results...</p>
+    </div>
+    <div id="darkened-overlay"></div>
+
+
+    <section id="upload-section" class="h-screen w-screen flex">
+        <div id="dashboard-nav">
+            <a class="text-3xl font-bold block mb-2" href="/">Melano</a>
+            <a class="text-xl block hover:underline" href="/">Home</a>
+            <a class="text-xl text-blue block" href="/upload">Upload Image</a>
+            <a id="back-home-nav" class="hover:underline block" href="/">&larr; Back Home</a>
+        </div>
+
+
+        <form id="image-upload-form" th:action="@{/upload}" method="post" enctype="multipart/form-data">
+            <div id="input-container" class="flex">
+                <input type="file" id="img" name="img" accept="image/*" oninput="updateImg()">
+                <div id="input-content" class="mx-auto my-auto">
+                    <p id="input-title" class="text-3xl font-bold">Upload an image.</p>
+                    <embed id="plus-button" class="mx-auto" src="/imgs/plus-button.svg">
+                </div>
+                <img id="preview" src="" height="200">
+            </div>
+            
+            <div class="flex mt-4">
+                <p id="disclaimer" class="text-xl"><span class="text-blue">Disclaimer</span>: results are not guaranteed to be 100% accurate. If you are doubting your results it is recommended to check with a medical practicioner</p>
+                <button id="image-submit-button" class="text-xl font-bold ml-auto" type="submit" onclick="popup()">Submit Image &rarr;</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

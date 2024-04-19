@@ -1,7 +1,10 @@
 nav{
     z-index: 9999;
     width: 100vw;
+    top: 0;
     position: absolute;
+    padding-left: 17.5vw;
+    padding-right: 17.5vw;
 }
 
 .nav-link{
@@ -9,5 +12,23 @@ nav{
 }
 
 .nav-link:hover{
-    opacity: 60%;
+    opacity: 50%;
+}
+
+
+#footer{
+    height: 20vh;
+    margin-top: 8rem;
+    box-shadow: 0 0 10px 4px rgba(57, 81, 94, 0.2);
+    padding-left: 17.5vw;
+    padding-right: 17.5vw;
+    padding-top: 2rem;
+}
+
+
+#dashboard-nav{
+    width: 20vw;
+    height: 100vh;
+    box-shadow: 0 0 10px 4px rgba(57, 81, 94, 0.2);
+    padding: 1rem;
 }

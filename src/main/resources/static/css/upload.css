@@ -1,0 +1,90 @@
+html{
+    overflow: hidden;
+}
+
+#upload-section{
+    
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 9999;
+    position: absolute;
+    cursor: pointer;
+}
+
+#input-container{
+    border: 0.25rem dashed lightgray;
+    height: 80vh;
+    width: 80vw;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+#plus-button{
+    margin-top: 1rem;
+}
+
+#image-submit-button{
+    height: 10vh;
+    width: 15vw;
+    background-color: #0d93f2;
+    color: white;
+    border-radius: 5rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 999999999;
+}
+
+#image-submit-button:hover{
+    opacity: 70%;
+}
+
+#disclaimer{
+    width: 50%;
+    margin-left: 1rem;
+}
+
+#preview{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#back-home-nav{
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+#prediction-container{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+#loading-popup{
+    height: 30vh;
+    width: 30vw;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px 4px rgba(57, 81, 94, 0.2);
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999999999999999;
+    display: none;
+}
+
+#darkened-overlay{
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   z-index: 999999999;
+   display: none;
+}
